@@ -1,7 +1,8 @@
 import type { RouteObject } from "react-router";
-import AdminLayout from "../../admin/adminLayout/AdminLayout";
+
 import AllTasks from "../teacher-pages/AllTasks";
 import TeacherLayout from "../teacher-layout/TeacherLayout";
+import TaskDetails from "../teacher-pages/TaskDetails";
 
 const route: RouteObject[] = [
   {
@@ -11,6 +12,10 @@ const route: RouteObject[] = [
       {
         path: "all-tasks",
         element: <AllTasks></AllTasks>,
+      },
+      {
+        path: "task-details",
+        element: <TaskDetails></TaskDetails>,
       },
     ],
   },
