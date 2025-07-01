@@ -1,8 +1,16 @@
-import { AppShell, Avatar, Burger, Group, Stack, Text } from "@mantine/core";
+import {
+  AppShell,
+  Avatar,
+  Burger,
+  Group,
+  Input,
+  Stack,
+  Text,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Outlet } from "react-router";
 
-function AdminLayout() {
+function TeacherLayout() {
   const [opened, { toggle }] = useDisclosure();
 
   return (
@@ -17,8 +25,9 @@ function AdminLayout() {
             variant="gradient"
             gradient={{ from: "#A955F5", to: "#EA489B", deg: 90 }}
           >
-            Admin Portal
+            Teacher Portal
           </Text>
+          <Input placeholder="Search Tasks" w={"501px"}></Input>
           <Group>
             <Avatar src="avatar.png" alt="it's me" />
             <Stack gap={0}>
@@ -42,4 +51,4 @@ function AdminLayout() {
   );
 }
 
-export default AdminLayout;
+export default TeacherLayout;

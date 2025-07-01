@@ -1,6 +1,5 @@
 import {
   Card,
-  CheckIcon,
   CloseIcon,
   Input,
   Progress,
@@ -17,30 +16,37 @@ const AllClients = () => {
       <SimpleGrid cols={3}>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
-          <Text fz={"h1"}>4</Text>
-          <Text>Total Clients</Text>
+          <Text fz={"h1"} fw={"bold"}>
+            4
+          </Text>
+          <Text c={"#676870"}>Total Clients</Text>
         </Card>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
-          <Text fz={"h1"}>80%</Text>
-          <Text>Goal Average</Text>
+          <Text fz={"h1"} fw={"bold"}>
+            80%
+          </Text>
+          <Text c={"#676870"}>Goal Average</Text>
         </Card>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
-          <Text fz={"h1"}>40</Text>
-          <Text>Tasks Completed</Text>
+          <Text fz={"h1"} fw={"bold"}>
+            40
+          </Text>
+          <Text c={"#676870"}>Tasks Completed</Text>
         </Card>
       </SimpleGrid>
       <Input
+        color="#C5C5C5"
         w={500}
         placeholder="Search Clients"
         leftSection={<CloseIcon />}
@@ -48,7 +54,7 @@ const AllClients = () => {
       <SimpleGrid cols={1}>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
           <Stack>
@@ -72,13 +78,13 @@ const AllClients = () => {
                 <Text>80%</Text>
               </Group>
 
-              <Progress value={50}></Progress>
+              <Progress value={50} color="#A955F5"></Progress>
             </Stack>
           </Stack>
         </Card>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
           <Stack>
@@ -102,13 +108,13 @@ const AllClients = () => {
                 <Text>80%</Text>
               </Group>
 
-              <Progress value={50}></Progress>
+              <Progress value={50} color="#A955F5"></Progress>
             </Stack>
           </Stack>
         </Card>
         <Card
           style={{
-            border: "1px solid gray",
+            border: "1px solid #C5C5C5",
           }}
         >
           <Stack>
@@ -132,7 +138,7 @@ const AllClients = () => {
                 <Text>80%</Text>
               </Group>
 
-              <Progress value={50}></Progress>
+              <Progress value={50} color="#A955F5"></Progress>
             </Stack>
           </Stack>
         </Card>
