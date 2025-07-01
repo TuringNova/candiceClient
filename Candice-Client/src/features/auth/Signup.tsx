@@ -20,7 +20,7 @@ const SignupPage = () => {
         <Stack justify="center" display={"flex"} align="center">
           <Text
             size="xl"
-            fw={900}
+            fw={1000}
             variant="gradient"
             gradient={{ from: "#A955F5", to: "#EA489B", deg: 90 }}
           >
@@ -37,13 +37,13 @@ const SignupPage = () => {
             <Text fz={"sm"} c={"#676870"}>
               First Name
             </Text>
-            <Input placeholder="Emter Your Email"></Input>
+            <Input placeholder="John"></Input>
           </Stack>
           <Stack gap={10}>
             <Text fz={"sm"} c={"#676870"}>
               Last Name
             </Text>
-            <Input placeholder="Emter Your Email"></Input>
+            <Input placeholder="Doe"></Input>
           </Stack>
         </Group>
 
@@ -51,14 +51,14 @@ const SignupPage = () => {
           <Text fz={"sm"} c={"#676870"}>
             Email
           </Text>
-          <Input placeholder="Emter Your Email" w={"400px"} h={"40px"}></Input>
+          <Input placeholder="Enter Your Email" w={"400px"} h={"40px"}></Input>
         </Stack>
         <Stack gap={10}>
           <Text fz={"sm"} c={"#676870"}>
             Assigned Coach Email
           </Text>
           <Input
-            placeholder="Enter Your Password"
+            placeholder="Assigned Coach Email"
             w={"400px"}
             h={"40px"}
           ></Input>
