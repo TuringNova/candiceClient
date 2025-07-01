@@ -9,8 +9,35 @@ import {
   Stack,
   Text,
 } from "@mantine/core";
+import { useDispatch, useSelector } from "react-redux";
+import type { RootState, AppDispatch } from "../../store/store";
+import { authStart, authSuccess, authFailure } from "../../store/authSlice";
+import { useState } from "react";
 
 const LoginPage = () => {
+
+  const dispatch= useDispatch<AppDispatch>();
+  //TODO: Use these to set loading or error or check user state. in case of an authenticated user, redirect to home page. employ error and loading as you see fit.
+  // const {loading, error, isAuthenticated}= useSelector((state: RootState)=> state.auth);
+
+  const [formData, setFormData]= useState({
+    email: "",
+    password: "",
+    rememberMe: false,
+  });
+
+  const handleSubmit= (e: React.FormEvent<HTMLFormElement>)=>{
+    e.preventDefault();
+    dispatch(authStart());
+    try{
+      //TODO: something of this sort but you'll first validate and everything as needed.
+      // const response= await axios.post("http://localhost:5000/api/auth/login", formData);
+      console.log('Sending request to server');
+    } catch(error){
+      dispatch(authFailure("Login failed"));
+    }
+  }
+
   return (
     <Card
       style={{
